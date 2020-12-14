@@ -1,3 +1,2 @@
 # Guessing game
-- Date: datetime
-- Number of lines of gussing game: 29
+- Number of lines of gussing game: 29 using `wc README.md`
