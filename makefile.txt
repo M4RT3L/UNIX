@@ -1,5 +1,7 @@
 program:*.sh
         touch README.md
         echo "# Guessing game" >README.md
-        echo "-date: 2020/12/13" >README.md
-        echo "- Number of lines of guessing game: 29 using `wc README.md`" >> README.md
+        echo "\nDate make ran at:" >> README.md
+	date >> README.md
+	echo "\nNumber of lines file guessinggame.sh contains:" >> README.md
+	cat guessinggame.sh | wc -l >> README.md
