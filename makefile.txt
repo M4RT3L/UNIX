@@ -1,5 +1,4 @@
 program:*.sh
         touch README.md
-        echo "#Guessing game" >README.md
+        echo "# Guessing game" >README.md
         echo "%D" >> README.md
-        echo "wc guessinggame.sh" >> README.md
