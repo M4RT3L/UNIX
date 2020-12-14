@@ -1,2 +1,3 @@
 # Guessing game
-- word count guessing game ` wc README.mc`
+- Date: datetime
+- Number of lines of gussing game: 29
