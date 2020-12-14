@@ -1,3 +1,3 @@
-#Guessing game
+# Guessing game
 %D
 wc guessinggame.sh
