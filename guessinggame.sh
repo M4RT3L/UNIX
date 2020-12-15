@@ -1,29 +1,26 @@
-echo "How many files are in this directory"
-read guess
-if [ $guess -eq 10 ]
-then
-        echo "Congrats you win"
-else
-        echo "Try again"
-        while [ $guess -ne 10 ]
-        do
-                echo "How many files are in this directory"
-                read guess
-                if [ $guess -gt 10 ]
-                then
-                        echo "Too far"
-                else
-                        if [ $guess -gt 10 ]
-                        then
-                                echo "Too  far"
-                        else
-                                if [ $guess  -lt 10 ]
-                                then
-                                        echo "Too near"
-                                else
-                                        echo "Congrats you win"
-                                fi
-                        fi
-                fi
-        done
-fi
+fn=$(ls | wc -l)
+
+function guessf {
+	while [[ $fn -ne $gf ]]
+	do
+	add=$((add+1))
+	echo "attempt number: $add"
+	read gf
+	if [[ $gf -eq $fn ]]
+	then
+		echo "Great Job! Congrats"
+	else
+		if [[ $gf -gt $fn ]]
+		then
+			echo "Your numer is too high ! Try again."
+		else
+			echo "Your numer is too low ! Try again."
+		fi
+	fi
+	done
+}
+echo "Let play a game"
+echo "There are a specific number of files in the directory"
+echo "So, try to guess how many files are in it, good luck!"
+echo "Enter..."
+Guessf
