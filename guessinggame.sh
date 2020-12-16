@@ -1,26 +1,23 @@
-fn=$(ls | wc -l)
+number=$(ls | wc -l)
 
-function guessf {
-	while [[ $fn -ne $gf ]]
+function guess {
+	while [[ $number -ne $input ]]
 	do
 	add=$((add+1))
 	echo "attempt number: $add"
-	read gf
-	if [[ $gf -eq $fn ]]
+	read input
+	if [[ $input -eq $number ]]
 	then
-		echo "Great Job! Congrats"
+		echo "Congrats you guess correct"
 	else
-		if [[ $gf -gt $fn ]]
+		if [[ $input -gt $number ]]
 		then
-			echo "Your numer is too high ! Try again."
+			echo "Your number is too high, Try again."
 		else
-			echo "Your numer is too low ! Try again."
+			echo "Your number is too low, Try again."
 		fi
 	fi
 	done
 }
-echo "Let play a game"
-echo "There are a specific number of files in the directory"
-echo "So, try to guess how many files are in it, good luck!"
-echo "Enter..."
-Guessf
+echo "Input a number"
+Guess
